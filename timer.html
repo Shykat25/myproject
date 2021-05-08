@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="countdown.css">
+</head>
+<div id="countdown"></div>
+<script>
+
+var time=450;
+function countdown(){
+var min=Math.floor(time/60);
+var sec=time%60;
+var count=document.getElementById("countdown");
+count.innerHTML=`${min}:${sec}`;
+
+
+
+time--;
+
+
+
+}
+setInterval(countdown,1000)
+
+
+</script>
+<body>
+</html>
